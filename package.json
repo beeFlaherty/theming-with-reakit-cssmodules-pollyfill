@@ -15,7 +15,7 @@
     "reakit": "1.2.4",
     "reakit-system-bootstrap": "0.13.4",
     "sass": "1.27.0",
-    "svgr": "2.0.0"
+    "svgr": "1.10.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"
