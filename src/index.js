@@ -3,14 +3,13 @@ import React, { useEffect, useState } from "react";
 import cssVars from "css-vars-ponyfill";
 import axios from "axios";
 import ReactDOM from "react-dom";
-import { useTabState, Tabs, Tab, TabList, TabPanel, Button } from "reakit";
+import { useTabState, Tab, TabList, TabPanel, Button } from "reakit";
 import styles from "./index.module.css";
 
 const theme1 = "https://run.mocky.io/v3/9546b875-4759-4d78-89f8-552ce90dc43f";
 const theme2 = "https://run.mocky.io/v3/92530fd4-1734-4477-8996-41d9653f7194";
 function App() {
   const [theme, setTheme] = useState(null);
-  const [loading, setloading] = useState(null);
   const getTheme = (url) => {
     axios
       .get(url)
@@ -21,6 +20,7 @@ function App() {
       });
   };
   const clearTheme = () => {
+    //eslint-disable-next-line  no-undef
     root.style.cssText = ""; //need different way to do this
   };
   //pageload
@@ -48,6 +48,7 @@ function App() {
       Object.keys(theme).map(function (key, index) {
         // root.style.setProperty(`--${key}`, theme[key]);
         styles[`--${key}`] = theme[key];
+        return null;
       });
 
       cssVars({
