@@ -1,0 +1,91 @@
+:root {
+  --siteBackgroundColor: #c1c1c1;
+  --primaryFontFamily: "Arial, sans-serif";
+  --primaryFontColor: #3d3d3d;
+  --primaryBackgroundColor: #fff;
+
+  --primaryColor: #a40000;
+  --primaryTextOn: #fff;
+  --inactiveBackgroundColor: #aaa;
+  --inactiveOpacity: 1;
+  --inactiveTextColor: #3d3d3d;
+  --inactiveBorderColor: #aaa;
+
+  --buttonPadding: 0.5rem;
+  --buttonFontWeight: 700;
+  --buttonBorder: 2px;
+
+  --paddingSm: 0.5rem;
+  --paddingMd: 1rem;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+:global #root {
+  height: 100%;
+}
+.container {
+  background: var(--siteBackgroundColor);
+  font-family: var(--primaryFontFamily);
+  padding: var(--paddingMd);
+  height: 100%;
+}
+
+.tabContainer {
+  width: 90%;
+}
+
+.tabPill {
+  position: relative;
+  background-color: var(--inactiveBackgroundColor);
+  color: var(--inactiveTextColor);
+  display: inline-block;
+  padding: var(--paddingSm) var(--paddingMd);
+  opacity: var(--inactiveOpacity);
+  cursor: pointer;
+  z-index: 0;
+  border: 0;
+  border-top: 10px solid var(--inactiveBorderColor);
+}
+
+.tabPill:hover {
+  color: var(--primaryFontColor);
+}
+
+.tabPill[aria-selected="true"] {
+  color: var(--primaryFontColor);
+  opacity: 1;
+  background-color: var(--primaryBackgroundColor);
+  border-top: 10px solid var(--primaryColor);
+}
+
+.tabPill[aria-selected="true"]:hover {
+  color: var(--primaryFontColor);
+}
+
+.tabContent {
+  font-family: var(--primaryFontFamily);
+  background-color: var(--primaryBackgroundColor);
+  box-sizing: border-box;
+  width: 100%;
+  padding: var(--paddingMd);
+}
+
+.btn {
+  background-color: var(--primaryColor);
+  border: var(--buttonBorder) solid var(--primaryColor);
+  padding: var(--buttonPadding);
+  color: var(--primaryTextOn);
+  font-weight: var(--buttonFontWeight);
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: var(--paddingSm);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}

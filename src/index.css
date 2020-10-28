@@ -1,0 +1,12 @@
+.dialog {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+}
+
+.btn {
+  background: blue;
+  color: white;
+  padding: 1em;
+  border-radius: 5px;
+}

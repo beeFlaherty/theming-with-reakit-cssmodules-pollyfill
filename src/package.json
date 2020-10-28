@@ -1,0 +1,20 @@
+{
+  "name": "theming-with-reakit-cssmodules",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/m4n32vjkoj",
+  "main": "index.js",
+  "dependencies": {
+    "@svgr/webpack": "5.4.0",
+    "axios": "0.20.0",
+    "css-vars-ponyfill": "2.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.3",
+    "reakit": "1.2.4",
+    "reakit-system-bootstrap": "0.13.4",
+    "sass": "1.27.0",
+    "svgr": "2.0.0"
+  }
+}
